@@ -47,7 +47,7 @@ jobs:
         run: echo "The Current Build number NEW format for SWAN-${{ steps.date.outputs.date }}.$BUILD_NUMBER"	
   Checkout:
     # To Checkout the code
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
